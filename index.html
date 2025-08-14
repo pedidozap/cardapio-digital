@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cardápio Digital</title>
+    <meta name="description" content="Cardápio digital rápido e prático, integrado ao Google Sheets.">
+    <meta name="keywords" content="cardápio, delivery, restaurante, ifood, cardapio digital">
+    <!-- Tailwind via CDN (rápido para começar) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Ajustes de Tailwind se desejar (opcional)
+      tailwind.config = {
+        darkMode: 'class',
+        theme: { extend: {} }
+      }
+    </script>
+    <style>
+      :root { --accent: #EA1D2C; } /* iFood red */
+      .card:hover { transform: translateY(-2px); }
+    </style>
+  </head>
+  <body class="bg-white text-gray-900 dark:bg-neutral-950 dark:text-gray-100">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
